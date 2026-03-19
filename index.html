@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <label for="inputText">Enter the total check amount $</label>
+    <input type="text" id="inputText" />
+    <br /><br />
+    <div id="tipOptions">
+      <h2>Choose your tip %:</h2>
+      <div class="optionBox">
+        <label for="option1">5%</label>
+        <input type="radio" name="tip" value=".05" id="option1" />
+      </div>
+      <div class="optionBox">
+        <label for="option2">10%</label>
+        <input type="radio" name="tip" value=".10" id="option2" />
+      </div>
+      <div class="optionBox">
+        <label for="option3">15%</label>
+        <input type="radio" name="tip" value=".15" id="option3" />
+      </div>
+      <div class="optionBox">
+        <label for="option4">20%</label>
+        <input type="radio" name="tip" value=".20" id="option4" />
+      </div>
+    </div>
+    <br /><br />
+    <div id="results">
+      <label for="tipAmount">Tip Amount:</label>
+      <p id="tipAmount"></p>
+      <label for="totalAmount">Total Bill:</label>
+      <p id="totalAmount"></p>
+    </div>
+  </body>
+</html>
